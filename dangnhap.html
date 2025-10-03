@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang đăng nhập</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./" />
   </head>
     <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background: #0312e1;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -17,7 +17,7 @@
       gap: 40px;
     }
     .form-container, .profile-container {
-      background: white;
+      background: rgb(109, 223, 240);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -66,8 +66,10 @@
       <input type="email" id="email" placeholder="Email" required>
       <input type="number" id="phone" placeholder="Số điện thoại" required>
       <input type="text" id="address" placeholder="Địa chỉ" required>
-      <button type="submit">Lưu hồ sơ</button>
+      <button type="submit"><a href="./trangchu.html">"nothingbeatsthejet2holiday"🥀🥀🥀</a></button>
     </form>
+    
+    
   </div>
     <script src="script.js">
   
@@ -83,6 +85,7 @@
           <p><b>Email:</b> ${profile.email}</p>
           <p><b>Điện thoại:</b> ${profile.phone}</p>
           <p><b>Địa chỉ:</b> ${profile.address}</p>
+          <link rel="stylesheet" href="./sign_in.html">
         `;
         document.getElementById("name").value = profile.name;
         document.getElementById("email").value = profile.email;
