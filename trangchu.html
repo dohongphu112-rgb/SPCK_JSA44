@@ -154,8 +154,7 @@
     <!-- SECTION TIN TỨC -->
     <section class="container">
       <h2>Tin tức nổi bật</h2>
-      <div class="grid" id ="idgrid">
-      </div>
+      <div class="grid" id="idgrid"></div>
     </section>
 
     <!-- SECTION DỊCH VỤ -->
@@ -208,14 +207,9 @@
 
             ele_table.innerHTML += `
                     <div class="card">
-                    <h3>Bài viết 1</h3>
-                    <p>bla bla bla</p>
-                    <img src="./978.png" alt="">
+                    ${resp.data[i].title}
+                    <img scr="https://jsa44.nextgentra.com/api/phuposts/${resp.data[i].image.url}" alt="">
                     </div>
-
-                    <td>
-                      https://jsa44.nextgentra.com/api/phuposts${resp.data[i].image.url}
-                    </td>
             `;
           }
         });
