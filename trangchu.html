@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ VNIED fake</title>
+    <title>Trang chủ quản lý thông tin</title>
+    <link rel="stylesheet" href="./index.html">
     <style>
       * {
         margin: 0;
@@ -126,16 +127,20 @@
         font-size: 18px;
         display: none;
       }
+
+      .spck {
+        width: 30%;
+      }
     </style>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <div class="logo">VNIEDfake</div>
+        <div class="logo">quản lý dữ liệu</div>
         <nav class="nav">
           <ul>
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="./index.html">Đăng nhập</li>
             <li><a href="#">Giới thiệu</a></li>
             <li><a href="#">Tin tức</a></li>
             <li><a href="#">Liên hệ</a></li>
@@ -208,7 +213,7 @@
             ele_table.innerHTML += `
                     <div class="card">
                     ${resp.data[i].title}
-                    <img scr="https://jsa44.nextgentra.com/api/phuposts/${resp.data[i].image.url}" alt="">
+                    <img class="spck" src="https://jsa44.nextgentra.com${resp.data[i].image.url}" alt="">
                     </div>
             `;
           }
